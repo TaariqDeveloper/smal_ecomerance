@@ -1,8 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
+
 function Product(props) {
   return (
     <div className="w-[410px] h-[410px] p-2 border-2 border-gray-600 ">
-      <img src={props.image} alt="" className="w-[400px] rounded" />
+      <NavLink>
+        <img src={props.image} alt="" className="w-[400px] rounded" />
+      </NavLink>
       <div className="flex justify-between text-3xl mt-2">
         <div>
           <h1>{props.title}</h1>
